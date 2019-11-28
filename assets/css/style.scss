@@ -475,12 +475,27 @@ About Section -- Home Page
   clip-path: circle(50% at 50% 50%);
 }
 
+#me2 {
+  display: none;
+}
+
 #aboutQuote {
   display: block;
   text-align: center;
   margin: auto;
   color: #7a197e;
 }
+
+@media(max-width: 850px) {
+  #me {display: none}
+  #me2 {
+    height: 380px;
+    width: 380px;
+    object-fit: contain; 
+    object-position: top;
+  }
+
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - 
 Skill Cards
