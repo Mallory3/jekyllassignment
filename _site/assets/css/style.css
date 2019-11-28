@@ -1306,96 +1306,174 @@ Skill Cards
 /* - - - - - - - - - - - - - - - - - - - - - - - - 
 Blog Page
 - - - - - - - - - - - - - - - - - - - - - - - - */
-#blogListSection {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+@media (min-width: 600px) {
+  #blogListSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
 
-#blogHero {
-  grid-row: 1 /4;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"); }
+  #blogHero {
+    grid-row: 1 /4;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"); }
 
-#collectionHero {
-  grid-row: 1 /4;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1536670605848-b67e434f4ea5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80");
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  #collectionHero {
+    grid-row: 1 /4;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1536670605848-b67e434f4ea5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
-#blogListBackground {
-  grid-row-start: 1;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  padding-top: 1em;
-  height: 120vh;
-  background-color: black;
-  width: 100%;
-  height: 100vh; }
+  #blogListBackground {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-top: 1em;
+    height: 120vh;
+    background-color: black;
+    width: 100%;
+    height: 100vh; }
 
-#blogTitle {
-  display: block;
-  text-align: center;
-  margin-top: 4em;
-  color: #f86f2f; }
+  #blogTitle {
+    display: block;
+    text-align: center;
+    margin-top: 4em;
+    color: #f86f2f; }
 
-#blogList {
-  list-style: none;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  width: 100%;
-  text-align: center;
-  margin: auto; }
+  #blogList {
+    list-style: none;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+    margin: auto; }
 
-#blogLink {
-  color: white;
-  font-size: 1.5rem;
-  padding: .5em; }
+  #blogLink {
+    color: white;
+    font-size: 1.5rem;
+    padding: .5em; }
 
-#blogLink:hover {
-  text-decoration: none; }
+  #blogLink:hover {
+    text-decoration: none; }
 
-.button {
-  display: block;
-  width: 200px;
-  height: 60px;
-  position: relative;
-  font-family: arial; }
+  .button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    position: relative;
+    font-family: arial; }
 
-.button div {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  line-height: 60px;
-  text-align: center;
-  transform-origin: 50% 50% -30px;
-  transition: all .5s ease;
-  backface-visibility: hidden; }
+  .button div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    line-height: 60px;
+    text-align: center;
+    transform-origin: 50% 50% -30px;
+    transition: all .5s ease;
+    backface-visibility: hidden; }
 
-.button :nth-child(1) {
-  color: black;
-  background: linear-gradient(45deg, #f86f2f, #1f0a18);
-  transform: rotateX(90deg); }
+  .button :nth-child(1) {
+    color: black;
+    background: linear-gradient(45deg, #f86f2f, #1f0a18);
+    transform: rotateX(90deg); }
 
-.button :nth-child(2) {
-  background-color: black;
-  color: white;
-  transform: rotateX(0deg); }
+  .button :nth-child(2) {
+    background-color: black;
+    color: white;
+    transform: rotateX(0deg); }
 
-.button:hover :nth-child(1) {
-  transform: rotateX(0deg); }
+  .button:hover :nth-child(1) {
+    transform: rotateX(0deg); }
 
-.button:hover :nth-child(2) {
-  transform: rotateX(-90deg); }
+  .button:hover :nth-child(2) {
+    transform: rotateX(-90deg); } }
+@media (max-width: 600px) {
+  #blogListSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
 
+  #blogHero {
+    display: none; }
+
+  #collectionHero {
+    display: none; }
+
+  #blogListBackground {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-top: 1em;
+    height: 100%;
+    background-color: black;
+    width: 100%; }
+
+  #blogTitle {
+    display: block;
+    text-align: center;
+    margin-top: 4em;
+    color: #f86f2f; }
+
+  #blogList {
+    list-style: none;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block; }
+
+  #blogLink {
+    color: white;
+    font-size: 1.5rem;
+    padding: .5em; }
+
+  #blogLink:hover {
+    text-decoration: none; }
+
+  .button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    position: relative;
+    font-family: arial;
+    margin-left: 8em; }
+
+  .button div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    line-height: 60px;
+    text-align: center;
+    transform-origin: 50% 50% -30px;
+    transition: all .5s ease;
+    backface-visibility: hidden; }
+
+  .button :nth-child(1) {
+    color: black;
+    background: linear-gradient(45deg, #f86f2f, #1f0a18);
+    transform: rotateX(90deg); }
+
+  .button :nth-child(2) {
+    background-color: black;
+    color: white;
+    transform: rotateX(0deg); }
+
+  .button:hover :nth-child(1) {
+    transform: rotateX(0deg); }
+
+  .button:hover :nth-child(2) {
+    transform: rotateX(-90deg); } }
 /* - - - - - - - - - - - - - - - - - - - - - - - - 
 Blog Post Page
 - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -1471,7 +1549,8 @@ Contact Page Post
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 70vh; }
 
 form {
   padding-left: 6em;
@@ -1491,7 +1570,7 @@ fieldset {
   font-size: 20px; }
 
 legend {
-  font-size: 3.5vmin;
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif; }
 
 span {
@@ -1500,17 +1579,18 @@ span {
 
 input {
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5vmin;
+  font-size: 1.5rem;
   border-radius: 5px;
   padding: 1px 1px 3px 20px;
   background-repeat: no-repeat;
   background-position: 8px 9px;
   display: block;
   width: 50vw;
-  margin: auto; }
+  margin: auto;
+  color: black; }
 
 input:hover {
-  background-color: #dee5f7; }
+  background-color: #acbde6; }
 
 input#submit {
   color: white;
