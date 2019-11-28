@@ -1,0 +1,35 @@
+---
+layout: "wrapper"
+author: "Mallory Z"
+---
+<div id="blogGrid">
+
+  <div id="blogPostSideNav">
+  <!-- from giraffe academy: central navigation looping through posts -->
+    <ul id="blogPostUl">
+      {% for post in site.posts %}
+        <li id="blogPostNav">
+          <a class="button" id="blogPostNavLinks" style="{% if page.url == post.url %}color:red;{% endif %}" href="{{ post.url }}">
+            <div>{{ post.title }}</div>
+            <div>{{ post.title }}</div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div id="blogPostContent">
+      <h1 style="color:black">{{ page.title }}</h1>
+      <h3 style="color:black">{{ layout.author }}</h3>
+  
+      <hr>
+      {{ content }}
+
+      <a id="blogButton" class="button" href="/blog">
+        <div>Return to Blog List</div>
+        <div>Return to Blog List</div>
+    </a>
+
+    </div>
+
+</div>
