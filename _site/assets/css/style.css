@@ -1182,6 +1182,7 @@ About Section -- Home Page
   object-fit: contain;
   object-position: top;
   float: left;
+  margin-right: 1em;
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%); }
 
