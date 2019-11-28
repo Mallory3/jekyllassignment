@@ -179,6 +179,7 @@ header a:hover {
     background:#000000;
     transition: transform 0.2s; 
     transform: translateX(0px); 
+    z-index: 100;
   }
 
   header .menu {
@@ -203,13 +204,14 @@ header a:hover {
     justify-content: start; 
     padding-top: 2em;
     padding-left: 2em;
-    z-index: 1;
+    z-index: 100;
   }
 
   .openState a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    z-index: 100;
   }
 
   .closedState a {
