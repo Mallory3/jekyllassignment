@@ -1170,7 +1170,7 @@ About Section -- Home Page
 #aboutTitle {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  color: #250d1d;
+  color: #7a197e;
   font-size: 3ch; }
 
 #aboutContent {
@@ -1185,6 +1185,12 @@ About Section -- Home Page
   margin-right: 1em;
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%); }
+
+#aboutQuote {
+  display: block;
+  text-align: center;
+  margin: auto;
+  color: #7a197e; }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - 
 Skill Cards
