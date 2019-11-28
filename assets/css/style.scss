@@ -464,20 +464,6 @@ About Section -- Home Page
   color: black;
 }
 
-#me {
-  height: 380px;
-  width: 380px;
-  object-fit: contain; 
-  object-position: top;
-  float: left;
-  margin-right: 1em;
-  shape-outside: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
-}
-
-#me2 {
-  display: none;
-}
 
 #aboutQuote {
   display: block;
@@ -486,7 +472,24 @@ About Section -- Home Page
   color: #7a197e;
 }
 
-@media(max-width: 850px) {
+@media(min-width: 600px) {
+  #me {
+    height: 380px;
+    width: 380px;
+    object-fit: contain; 
+    object-position: top;
+    float: left;
+    margin-right: 1em;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  #me2 {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
   #me {display: none}
   #me2 {
     height: 380px;
@@ -494,6 +497,7 @@ About Section -- Home Page
     object-fit: contain; 
     object-position: top;
   }
+}
 
 
 
@@ -579,7 +583,7 @@ Skill Cards
   list-style: none;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .list {
